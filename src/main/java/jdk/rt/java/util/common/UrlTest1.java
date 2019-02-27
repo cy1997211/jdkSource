@@ -20,8 +20,5 @@ public class UrlTest1 {
 
         System.out.println(content);
 
-
     }
-
-
 }
