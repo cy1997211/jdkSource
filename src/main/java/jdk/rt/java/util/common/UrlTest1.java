@@ -3,6 +3,8 @@ package jdk.rt.java.util.common;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.setting.Setting;
 
+import java.io.Serializable;
+
 /**
  * @author teamsun_wangwei
  * @version V1.0.0
@@ -11,7 +13,7 @@ import cn.hutool.setting.Setting;
  * @date 2019/2/25 10:17
  * @Description:
  */
-public class UrlTest1 {
+public class UrlTest1 implements Serializable{
 
     public static void main(String[] args) {
         Setting setting = new Setting("url.properties");

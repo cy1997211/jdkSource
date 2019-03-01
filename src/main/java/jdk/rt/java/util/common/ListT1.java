@@ -10,6 +10,7 @@ import java.util.Vector;
  * @author: teamsun_wangwei
  * @description:
  * @create: 2019/2/16 11:56
+ * List是有序集合、元素可以重复、可以为空
  **/
 public class ListT1 {
 
