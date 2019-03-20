@@ -14,7 +14,7 @@ import java.util.List;
  * 2.数组是内存中连续的存储空间、由索引(下标)表示该数据和第一个元素的偏移量
  * 3.ArrayList是随机访问的(实现了RandomAcess接口，LinkedList未实现，Collections.binarySearch()方法)
  * 4.访问速度快、删除修改速度慢
- * 5.
+ * 5.ArrayList的Object[] elementData 是transient的，避免自动序列化空串，而是使用自己内置的序列化和反序列化方法
  * 6.arrayList创建用时:
     6214
     arrayList9800000

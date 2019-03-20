@@ -12,6 +12,7 @@ public class Animal {
     private String name;
     private int age;
     private String addr = "northArear";
+    private Double price;
 
     public Animal(){
         this.addr = "north";
@@ -55,12 +56,21 @@ public class Animal {
         this.addr = addr;
     }
 
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", addr='" + addr + '\'' +
+                ", price=" + price +
                 '}';
     }
 }

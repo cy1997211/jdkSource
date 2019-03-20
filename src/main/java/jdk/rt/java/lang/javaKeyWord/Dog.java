@@ -22,10 +22,4 @@ public class Dog extends Animal {
         return super.getAddr();
     }
 
-    public static void main(String[] args) {
-        Dog dog = new Dog("tt", 6);
-        System.out.println(dog.toString());
-        System.out.println(dog.getAddr());
-    }
-
 }
