@@ -4,6 +4,8 @@ import cn.hutool.http.HttpUtil;
 import cn.hutool.setting.Setting;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author teamsun_wangwei
@@ -22,6 +24,12 @@ public class UrlTest1 implements Serializable{
 
         System.out.println(content);
 
+        Map<String, Object> map = new HashMap<>();
+
+        map.put("type", "01");
+        map.put("key", "value");
+
+        System.out.println(map.toString());
     }
 
 }
