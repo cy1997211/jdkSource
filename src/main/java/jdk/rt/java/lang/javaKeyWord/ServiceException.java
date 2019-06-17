@@ -10,12 +10,20 @@ import java.io.Serializable;
  * @date 2019/2/28 9:36
  * @Description:
  */
-public class ServiceException implements Serializable{
+public class ServiceException extends RuntimeException implements Serializable{
 
     private String code;
 
+    public ServiceException(String code,String mesage){
+        super(mesage);
+        this.code = code;
+    }
 
+    public String getCode() {
+        return code;
+    }
 
-
-
+    public void setCode(String code) {
+        this.code = code;
+    }
 }

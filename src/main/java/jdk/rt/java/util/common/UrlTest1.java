@@ -25,10 +25,8 @@ public class UrlTest1 implements Serializable{
         System.out.println(content);
 
         Map<String, Object> map = new HashMap<>();
-
         map.put("type", "01");
         map.put("key", "value");
-
         System.out.println(map.toString());
     }
 

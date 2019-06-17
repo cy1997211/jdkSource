@@ -1,15 +1,15 @@
 package jdk.rt.java.lang;
 
+import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
-import com.sun.xml.internal.ws.developer.SerializationFeature;
-import jdk.rt.java.lang.javaKeyWord.Animal;
-import jdk.rt.java.lang.javaKeyWord.Dog;
-import org.apache.commons.lang3.StringUtils;
+import jdk.rt.java.lang.javaKeyWord.ServiceException;
 
+import java.lang.reflect.Array;
 import java.math.BigDecimal;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -23,31 +23,13 @@ import java.util.*;
 public class TestElse {
 
     public static void main(String[] args) {
-//       testBigDecimal();
-//       testMap();
-//        testBean2Json();
-
-//        testGetList();
-
-
-
-    }
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        if(list != null && list.size() > 1){
+            System.out.println("我搞不懂啦");
+        }
 
 
-    public static void testGetList(){
-        List<Dog> list = new ArrayList<>();
-
-        System.out.println(list.get(0).getAddr());
-    }
-
-
-    //将bean转换为json
-    public static void testBean2Json(){
-        Animal animal = new Animal();
-        String json = JSONObject.toJSONString(animal, SerializerFeature.WriteNullStringAsEmpty,
-                SerializerFeature.WriteBigDecimalAsPlain,SerializerFeature.WriteNullNumberAsZero);
-
-        System.out.println(json);
     }
 
     public static void testMap(){
@@ -58,7 +40,6 @@ public class TestElse {
         System.out.println(str);
     }
 
-
     //测试bigDecimal
     public static void testBigDecimal(){
         BigDecimal total = new BigDecimal("-0.0000000000000001");
@@ -67,7 +48,6 @@ public class TestElse {
 
             System.out.println("total为" + total);
         }
-
     }
 
     public static void testDouble(){
@@ -95,7 +75,5 @@ public class TestElse {
         }
         System.out.println(credit);
     }
-
-
 
 }
