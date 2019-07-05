@@ -20,7 +20,7 @@ public class TestMap {
     @Test
     public void testMap(){
         Map<String, Object> map = new HashMap<String, Object>();
-
+        List list = new ArrayList();
 
     }
 
